@@ -19,23 +19,19 @@ react-native-svg : Librairie pour les graphiques vectoriels.
 Installation
 Clonez ce dépôt sur votre machine locale :
 
-bash
 Copier le code
-git clone https://github.com/votre-utilisateur/gestion-poubelles.git
+git clone https://github.com/ismailtarik/Garbage_app_management.git
+
 Installez les dépendances :
-
-bash
-Copier le code
 npm install
-Configurez Firebase :
 
+Configurez Firebase :
 Créez un projet Firebase et ajoutez une base de données en temps réel.
 Exportez les informations de configuration Firebase et remplacez-les dans le fichier firebaseConfig.js.
-Lancez l'application :
 
-bash
-Copier le code
+Lancez l'application :
 npm start
+
 Utilisation
 Lancez l'application sur un simulateur ou un appareil réel.
 Visualisez les données collectées par les capteurs :
