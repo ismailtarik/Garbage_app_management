@@ -2,6 +2,11 @@
   "expo": {
     "name": "Garbage_management",
     "slug": "Garbage_management",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "extra": {
+      "eas": {
+        "projectId": "537a7ff6-2d6b-456b-86be-ff651ff52d76"
+      }
+    }
   }
 }
