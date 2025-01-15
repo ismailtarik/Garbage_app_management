@@ -18,32 +18,32 @@ export default function HomeScreen() {
           setMacAddresses(macs);
         }
       } catch (error) {
-        console.error("Error fetching data from Firebase:", error);
+        console.error('Error fetching data from Firebase:', error);
       }
     };
 
     fetchMacAddresses();
   }, []);
 
-  const renderMacAddressItem = ({ item }) => (
+  const renderGarbageItem = ({ item, index }) => (
     <TouchableOpacity
       style={styles.macItem}
       onPress={() => navigation.navigate('TrashDetails', { macAddress: item })}
     >
-      <Text style={styles.macText}>Mac Address: {item}</Text>
+      <Text style={styles.macText}>Garbage {index + 1}</Text>
     </TouchableOpacity>
   );
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.headerText}>Liste Of Garbages</Text>
+      <Text style={styles.headerText}>List of Garbages</Text>
 
       <FlatList
         data={macAddresses}
         keyExtractor={item => item}
-        renderItem={renderMacAddressItem}
-        ListHeaderComponent={<Text style={styles.listHeader}>Mac Addresses</Text>}
-        ListEmptyComponent={<Text style={styles.emptyText}>No mac addresses found.</Text>}
+        renderItem={renderGarbageItem}
+        ListHeaderComponent={<Text style={styles.listHeader}>Garbage Names</Text>}
+        ListEmptyComponent={<Text style={styles.emptyText}>No garbages found.</Text>}
         style={styles.list}
       />
     </SafeAreaView>
